@@ -1,8 +1,9 @@
-# Asset status — image loading fix
+# وضعیت تصاویر پروژه LUMIÈRE
 
-- Image host changed from Unsplash to the Pexels image CDN.
-- Image URLs use Pexels photo IDs matched to clinic, treatment, and illustrative doctor imagery.
-- A fallback image handler is applied to page images and gallery lightbox images.
-- Images are remote CDN assets; they are not bundled into the repository.
-- The font files in `assets/fonts` are user-managed and must be preserved during upload.
-- Verify the live site after deployment on the user's network because CDN access can vary by network/provider.
+- منبع تصاویر به صفحات فارسی StockCake تغییر کرده است.
+- آدرس‌های قبلی سرویس‌های تصویر از کد تصاویر و متادیتای صفحه حذف شده‌اند.
+- همه تصاویر صفحه، گالری، کارت خدمات، پروفایل پزشکان و تصویر اشتراک‌گذاری از یک دامنه تصاویر استفاده می‌کنند.
+- تصاویر StockCake در صفحه منبع با برچسب AI مشخص شده‌اند؛ بنابراین عکس مستند از پزشک یا کلینیک واقعی محسوب نمی‌شوند.
+- طبق صفحات منبع، این تصاویر برای استفاده تجاری رایگان معرفی شده‌اند؛ شرایط مجوز و الزام ارجاع باید هنگام انتشار رعایت شود.
+- فایل‌های تصویر همچنان از CDN منبع بارگذاری می‌شوند و در این بسته به صورت محلی ذخیره نشده‌اند.
+- پوشه و فایل‌های فونت `assets/fonts` متعلق به کاربر است و نباید حذف شوند.
