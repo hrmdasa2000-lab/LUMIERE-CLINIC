@@ -1,35 +1,20 @@
-# LUMIÈRE Clinic — Phase 1
+# LUMIÈRE Clinic — Portfolio Demo
 
-A responsive Persian/English clinic concept website for a portfolio demonstration.
+Responsive Persian/English clinic website concept built with React 18 UMD, ReactDOM, Babel Standalone and plain CSS. No build step, npm, Node.js or backend is required.
 
-## Deployment
+## Features
+- Persian RTL / English LTR toggle
+- Responsive navigation and page sections
+- Services, clinic introduction, specialist placeholders, illustrative testimonials
+- Image gallery using Unsplash image CDN with responsive `srcSet` sizes
+- Demo consultation form (client-side only; no data is transmitted or stored)
+- FAQ accordion
 
-This project is a static GitHub Pages site. It does not require Node.js, npm, a build step, or a backend. React 18, ReactDOM 18, and Babel Standalone are loaded from unpkg CDN; clinic imagery is delivered responsively from the Unsplash CDN.
+## Font
+The stylesheet loads `IRANSansMobile` from `assets/fonts/` in WOFF2, WOFF, TTF and EOT formats. Keep the four existing font files in that folder when updating the project.
 
-Upload the **contents of this folder** to the root of the `main` branch in the `LUMIERE-CLINIC` repository. Keep the existing font files in `assets/fonts/`.
+## Images and demo content
+Images are served from `images.unsplash.com`; a network connection is required. Clinic identity, staff profiles, testimonials, contact details and the consultation form are illustrative placeholders, not a real medical provider or real patient feedback.
 
-## Included
-
-- `index.html` — page shell and CDN dependencies
-- `css/style.css` — responsive layout and visual system
-- `js/app.jsx` — bilingual React interface and demo interactions
-- `assets/images/IMAGE-MANIFEST.md` — image CDN inventory
-
-## Font files
-
-The stylesheet references these existing files in `assets/fonts/`:
-
-- `IRANSansMobile.woff2`
-- `IRANSansMobile.woff`
-- `IRANSansMobile.ttf`
-- `IRANSansMobile.eot`
-
-Do not delete this folder when replacing the project files.
-
-## Images
-
-Images are requested from `images.unsplash.com` with responsive widths (480, 800, and 1200 px), automatic format selection, and lazy loading below the hero. No image binaries need to be uploaded to GitHub.
-
-## Demo notice
-
-Doctor profiles, testimonials, address, and phone details are illustrative. The consultation button only displays a demo notice; no real appointment or patient information is submitted. This project is not a real clinic or medical service.
+## GitHub Pages
+Keep `index.html` at the repository root and publish from `main` / root. No build command is needed.
