@@ -18,3 +18,8 @@ The consultation form does not send or store information. Specialist profiles, t
 
 ## Image and CDN note
 Images use `images.unsplash.com` URLs. The website therefore needs an internet connection to load those images. Confirm that each selected image and its applicable license/usage terms are suitable before commercial deployment.
+
+
+## Image delivery update
+
+Site photography is served through the Pexels image CDN (`images.pexels.com`). The app includes a fallback image handler so a failed individual image request does not leave an empty image area. Images are external and therefore still require access to the Pexels CDN from the visitor's network.
