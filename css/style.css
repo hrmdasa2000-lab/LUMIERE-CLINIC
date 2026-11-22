@@ -54,3 +54,31 @@
 .form-success{grid-column:1/-1;margin:0;padding:11px 13px;border-radius:10px;background:#e7f0e7;color:#315a3a;font-size:.84rem}
 @media(max-width:600px){.lightbox{padding:65px 16px 25px}.lightbox-figure{max-width:100%;max-height:80vh}.lightbox-figure img{max-height:68vh}.lightbox-nav{width:40px;height:40px;font-size:1.8rem}.lightbox-prev{left:8px}.lightbox-next{right:8px}.lightbox-close{top:12px;right:12px;width:40px;height:40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Phase 5: educational journal and readable article dialog */
+.journal-section{background:#f0f2ed}
+.journal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.journal-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .25s,box-shadow .25s}
+.journal-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.journal-art{height:155px;display:flex;align-items:flex-end;padding:18px;background:linear-gradient(135deg,#dfe8dc,#b8c9b6);position:relative;overflow:hidden}
+.journal-art:before,.journal-art:after{content:"";position:absolute;border:1px solid rgba(64,90,73,.24);border-radius:50%;width:180px;height:180px;right:12%;top:-80px}
+.journal-art:after{width:115px;height:115px;right:40%;top:35px}
+.journal-art-2{background:linear-gradient(135deg,#eee6d9,#d9c8ac)}
+.journal-art-3{background:linear-gradient(135deg,#e6e9e1,#c7d2c6)}
+.journal-art span{position:relative;z-index:1;font-size:2.6rem;line-height:1;color:rgba(48,54,50,.38);font-weight:800;direction:ltr}
+.journal-body{padding:22px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.journal-category{font-size:.72rem;color:var(--sage-dark);font-weight:800;letter-spacing:.06em}
+.journal-body h3{font-size:1.12rem;margin:9px 0 8px;line-height:1.7}
+.journal-body p{color:var(--muted);font-size:.86rem;line-height:2;margin:0 0 18px}
+.journal-read{margin-top:auto;border:0;background:transparent;padding:0}
+.journal-disclaimer{max-width:800px;margin:28px auto 0;text-align:center;color:var(--muted);font-size:.78rem}
+.article-modal{position:fixed;inset:0;z-index:220;background:rgba(22,30,24,.72);backdrop-filter:blur(7px);display:grid;place-items:center;padding:24px}
+.article-dialog{position:relative;width:min(720px,100%);max-height:min(82vh,760px);overflow:auto;background:var(--paper);border-radius:24px;padding:clamp(24px,5vw,48px);box-shadow:0 25px 90px rgba(0,0,0,.25)}
+.article-dialog h2{font-size:clamp(1.45rem,3vw,2.1rem);margin:12px 0 20px}
+.article-dialog>p{color:#535d55;line-height:2.2;font-size:1rem}
+.article-close{position:absolute;top:14px;left:16px;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;background:white;color:var(--ink);font-size:1.7rem;line-height:1}
+[dir="ltr"] .article-close{left:auto;right:16px}
+.article-notice{padding:14px 16px;margin:24px 0;background:var(--sage-pale);border-right:3px solid var(--sage);border-radius:10px;color:var(--sage-dark);font-size:.84rem;line-height:2}
+[dir="ltr"] .article-notice{border-right:0;border-left:3px solid var(--sage)}
+@media(max-width:900px){.journal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-links{gap:14px;font-size:.82rem}}
+@media(max-width:600px){.journal-grid{grid-template-columns:1fr}.journal-art{height:130px}.journal-body{padding:19px}.article-modal{padding:12px}.article-dialog{max-height:88vh;border-radius:18px;padding:28px 20px}.article-dialog h2{padding-inline:28px 0}}

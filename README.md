@@ -1,33 +1,20 @@
-# LUMIÈRE Clinic — Portfolio Demo
+# LUMIÈRE Clinic — Phase 5
 
-A responsive Persian/English clinic website concept built with React 18 UMD, ReactDOM, Babel Standalone and plain CSS. No local build, npm, Node.js or backend is required to publish it on GitHub Pages.
+A Persian/English, RTL/LTR, responsive portfolio concept for a skin, hair and beauty clinic.
 
-## Included sections and interactions
-- Persian RTL / English LTR language switch
-- Responsive navigation with accessible expanded state
-- Hero, trust strip, services, clinic introduction, illustrative specialist profiles and sample testimonials
-- Unsplash image CDN with responsive `srcSet`, lazy loading for below-the-fold images and high priority for the hero image
-- Gallery lightbox with previous/next controls, Escape to close and arrow-key navigation
-- Client-side demo consultation form; no information is transmitted or stored
-- FAQ accordion with accessible expanded state
-- Reduced-motion support and keyboard focus styles
+## What's included
+- Responsive one-page clinic concept with service, gallery, about, specialist, FAQ and demo consultation sections.
+- A new educational journal section with three bilingual sample articles and an accessible reading dialog.
+- Article content is illustrative general information, not diagnosis or personal medical advice.
+- Unsplash images are loaded through the Unsplash image CDN; no image binaries need to be uploaded.
+- React 18 UMD + ReactDOM + Babel Standalone are loaded from unpkg. No build step, npm, or Node.js is required for GitHub Pages.
+- `404.html`, `robots.txt`, `sitemap.xml`, and favicon are included.
 
-## SEO and publishing
-- Canonical URL, Persian metadata, Open Graph and Twitter metadata
-- Website JSON-LD, `robots.txt`, `sitemap.xml`, SVG favicon and custom `404.html`
-- See `SEO-CHECKLIST.md` for post-publish verification
+## Publish
+Upload the *contents* of this folder to the root of the `main` branch of the existing GitHub repository and commit. Keep the existing `assets/fonts` folder and its four `IRANSansMobile` font files; they are intentionally not bundled here.
 
-## Font
-Keep the existing font files in `assets/fonts/` with these names:
-- `IRANSansMobile.woff2`
-- `IRANSansMobile.woff`
-- `IRANSansMobile.ttf`
-- `IRANSansMobile.eot`
+## Demo limitations
+The consultation form does not send or store information. Specialist profiles, testimonials, contact details, and clinic information are placeholders. Replace them with verified client-approved content before any real business use.
 
-Font binaries are intentionally not included in this update ZIP, so existing files are not overwritten.
-
-## Images and demo content
-Images load from `images.unsplash.com`; visitors need internet access. Clinic identity, specialist profiles, testimonials, address and phone details are illustrative placeholders. The form is a front-end demonstration only, not a real appointment system.
-
-## GitHub Pages
-Keep `index.html` at the repository root and publish from the `main` branch / root folder. No build command is required.
+## Image and CDN note
+Images use `images.unsplash.com` URLs. The website therefore needs an internet connection to load those images. Confirm that each selected image and its applicable license/usage terms are suitable before commercial deployment.

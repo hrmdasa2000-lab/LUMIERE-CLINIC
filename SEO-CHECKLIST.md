@@ -1,18 +1,12 @@
-# SEO and publishing checklist — Phase 4
+# SEO and launch checklist
 
-## Added
-- Persian page title and description
-- Canonical URL for the GitHub Pages project
-- Open Graph and Twitter summary metadata
-- Website JSON-LD (not LocalBusiness/MedicalClinic, because this is a fictional portfolio demo)
-- `robots.txt` and `sitemap.xml`
-- SVG favicon
-- Hero image preload and CDN preconnect hints
-- Meaningful no-JavaScript fallback text
-- Custom GitHub Pages 404 page
-
-## Important
-- The project is a fictional portfolio concept. Do not add real clinic addresses, physician credentials, medical claims, reviews, or LocalBusiness structured data unless the project is converted into a real clinic website with verified details.
-- The site uses React UMD and Babel Standalone from public CDNs; JavaScript and internet access are required for the full interactive experience.
-- After publishing, test the canonical URL, sitemap, robots file, favicon, mobile layout, language switch, gallery, and demo form.
-- Search indexing and rich-result appearance are not guaranteed by adding metadata or a sitemap.
+- [x] Persian title and description
+- [x] Canonical URL for the GitHub Pages project
+- [x] Open Graph and Twitter preview metadata
+- [x] robots.txt and sitemap.xml
+- [x] Descriptive image alt text in the main experience
+- [x] Clear demo/fictional-clinic disclaimers
+- [ ] Verify live page after deployment
+- [ ] Check mobile layout and browser console
+- [ ] Replace placeholder clinic, specialist, testimonial and contact data before client production use
+- [ ] Review image licensing and privacy/publicity rights for commercial use

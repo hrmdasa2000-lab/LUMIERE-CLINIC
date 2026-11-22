@@ -1,9 +1,8 @@
-# Changelog
+# Changelog — Phase 5
 
-## Phase 4 — SEO and publishing readiness
-- Added canonical, social sharing metadata, and WebSite JSON-LD.
-- Added robots.txt and sitemap.xml.
-- Added SVG favicon and custom 404 page.
-- Added hero image preload and CDN connection hints.
-- Added a useful no-JavaScript fallback.
-- Documented that the website is a fictional portfolio demo, not a real medical business.
+- Added a bilingual educational journal section with three sample articles.
+- Added an accessible article-reading dialog with backdrop dismissal and explicit close control.
+- Added journal navigation to the main navigation and footer.
+- Added responsive journal cards and modal styles for desktop and mobile.
+- Updated page title, description, and keywords to reflect the added journal content and portfolio nature of the site.
+- Preserved CDN image delivery and existing GitHub Pages architecture.
