@@ -1,16 +1,16 @@
-# LUMIÈRE Clinic — Asset Status
+# Asset status — LUMIÈRE Clinic
+
+## Images
+- All site photography is served directly from the Unsplash image CDN (`images.unsplash.com`).
+- No image binaries need to be uploaded to the repository.
+- Image URLs are centralized through `photo()` and responsive candidates through `photoSet()` in `js/app.jsx`.
+- The browser selects an appropriate 480px, 800px, or 1200px image candidate using `srcSet` and `sizes`.
+- The hero image is prioritized; other images use lazy loading where applicable and asynchronous decoding.
+- The current image IDs are documented in `assets/images/IMAGE-MANIFEST.md`.
 
 ## Font
-- Required family: IranMobileSans
-- Expected file: `assets/fonts/IranMobileSans.woff2`
-- Status: waiting for the actual font file from the project owner.
-- CSS now applies the IranMobileSans family to all text, including the Latin wordmark. Until the font binary is supplied, browsers will show the fallback font.
+- CSS expects `assets/fonts/IranMobileSans.woff2`.
+- User confirmed the GitHub Pages URL for this font downloads successfully.
 
-## Photographs
-- Current page photographs are real photographic image URLs from Unsplash.
-- They are still remotely loaded and are not yet stored in `assets/images/`.
-- Local packaging, source/permission verification, image integrity checks, and the final image audit are still pending.
-- No AI-generated image is being represented as a real clinic, doctor, device, or treatment photograph.
-
-## Release gate
-Do not mark Phase 1 asset completion as finished until the font file is present, all selected photographs are locally bundled, and the site is checked again on GitHub Pages.
+## Hosting
+- Static GitHub Pages deployment. No backend, local image storage, npm, or build step is required.

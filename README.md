@@ -23,10 +23,11 @@ A responsive, Persian-first dermatology / skin / hair clinic portfolio homepage.
 
 ## Important limitations
 1. React and Babel are loaded from public CDNs, so a network connection and CDN availability are required.
-2. `assets/fonts/IranMobileSans.woff2` is a placeholder path. The actual font file has not been supplied yet. Once provided, place it at that exact path. Until then the browser falls back to Tahoma/sans-serif.
-3. Images are currently loaded from Unsplash image URLs and are not bundled locally. Network access to images.unsplash.com is required. The project environment did not permit downloading image binaries during this build. Image assets must be locally bundled and the image audit completed before calling the delivery production-ready.
-4. All clinic, staff, contact, and testimonial content is fictional / illustrative. Do not present it as a real medical provider or real patient feedback.
-5. The consultation button is a demo interaction only. It does not send or store a real appointment request.
+2. The site uses `IranMobileSans` globally, including the Latin brand wordmark. The project owner confirmed that `assets/fonts/IranMobileSans.woff2` is published and downloads successfully from GitHub Pages.
+3. Images are currently loaded from Unsplash URLs and are not bundled locally. Network access to images.unsplash.com is required. Local image packaging and image-by-image source/license review remain outstanding. Do not describe the image requirement as fully completed until local files and an image audit are delivered.
+4. The mobile navigation and FAQ accordion expose expanded/collapsed state and relationships for assistive technology.
+5. All clinic, staff, contact, and testimonial content is fictional / illustrative. Do not present it as a real medical provider or real patient feedback.
+6. The consultation button is a demo interaction only. It does not send or store a real appointment request.
 
 ## Publish on GitHub Pages
 Upload the folder contents to a GitHub repository and enable GitHub Pages from the repository settings. No build step is required. Keep `index.html` at the published root.
@@ -43,3 +44,8 @@ LUMIERE-CLINIC/
     ├── icons/
     └── images/
 ```
+
+
+## Images
+
+Site photos are served directly from the Unsplash CDN (`images.unsplash.com`). Responsive `srcSet` variants are defined in `js/app.jsx`; no image files need to be uploaded. See `assets/images/IMAGE-MANIFEST.md` for the image IDs and placements.
