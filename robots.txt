@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hrmdasa2000-lab.github.io/LUMIERE-CLINIC/sitemap.xml
